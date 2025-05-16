@@ -1,0 +1,634 @@
+[
+  {
+    "type": "precondition",
+    "name": "Acid Reflux"
+  },
+  {
+    "type": "precondition",
+    "name": "Acid Reflux (for some)"
+  },
+  {
+    "type": "precondition",
+    "name": "Acid reflux"
+  },
+  {
+    "type": "precondition",
+    "name": "Alcohol Sensitivity"
+  },
+  {
+    "type": "precondition",
+    "name": "Alcoholism"
+  },
+  {
+    "type": "precondition",
+    "name": "Allergies"
+  },
+  {
+    "type": "precondition",
+    "name": "Almond Allergy"
+  },
+  {
+    "type": "precondition",
+    "name": "Anxiety"
+  },
+  {
+    "type": "precondition",
+    "name": "Anxiety Disorders"
+  },
+  {
+    "type": "precondition",
+    "name": "Apple Allergy"
+  },
+  {
+    "type": "precondition",
+    "name": "Apricot Allergy"
+  },
+  {
+    "type": "precondition",
+    "name": "Asthma"
+  },
+  {
+    "type": "precondition",
+    "name": "Banana Allergy"
+  },
+  {
+    "type": "precondition",
+    "name": "Bleeding Disorders"
+  },
+  {
+    "type": "precondition",
+    "name": "Blood Sugar Sensitivity"
+  },
+  {
+    "type": "precondition",
+    "name": "Blood Thinners (Vitamin K)"
+  },
+  {
+    "type": "precondition",
+    "name": "Blood Thinners (large amounts)"
+  },
+  {
+    "type": "precondition",
+    "name": "Caffeine Sensitivity"
+  },
+  {
+    "type": "precondition",
+    "name": "Cardiovascular Disease"
+  },
+  {
+    "type": "precondition",
+    "name": "Celery Allergy"
+  },
+  {
+    "type": "precondition",
+    "name": "Celiac Disease"
+  },
+  {
+    "type": "precondition",
+    "name": "Celiac Disease (if not certified gluten-free)"
+  },
+  {
+    "type": "precondition",
+    "name": "Cilantro Allergy"
+  },
+  {
+    "type": "precondition",
+    "name": "Citrus Allergy"
+  },
+  {
+    "type": "precondition",
+    "name": "Congestive Heart Failure"
+  },
+  {
+    "type": "precondition",
+    "name": "Coriander Allergy"
+  },
+  {
+    "type": "precondition",
+    "name": "Corn Allergy"
+  },
+  {
+    "type": "precondition",
+    "name": "Crohn\u2019s Disease"
+  },
+  {
+    "type": "precondition",
+    "name": "Dental Caries"
+  },
+  {
+    "type": "precondition",
+    "name": "Dental Sensitivity"
+  },
+  {
+    "type": "precondition",
+    "name": "Diabetes"
+  },
+  {
+    "type": "precondition",
+    "name": "Diabetes (Glycemic Index)"
+  },
+  {
+    "type": "precondition",
+    "name": "Diabetes (high sugar content)"
+  },
+  {
+    "type": "precondition",
+    "name": "Diabetes (high sugar fruits/juices)"
+  },
+  {
+    "type": "precondition",
+    "name": "Diabetes (portion control)"
+  },
+  {
+    "type": "precondition",
+    "name": "Diabetes (white rice, portion control)"
+  },
+  {
+    "type": "precondition",
+    "name": "Digestive Issues"
+  },
+  {
+    "type": "precondition",
+    "name": "Digestive Sensitivity"
+  },
+  {
+    "type": "precondition",
+    "name": "Diverticulitis (for some)"
+  },
+  {
+    "type": "precondition",
+    "name": "Egg Allergy"
+  },
+  {
+    "type": "precondition",
+    "name": "Electrolyte Imbalance"
+  },
+  {
+    "type": "precondition",
+    "name": "Epilepsy (large amounts)"
+  },
+  {
+    "type": "precondition",
+    "name": "Fennel Allergy"
+  },
+  {
+    "type": "precondition",
+    "name": "Fish Allergy"
+  },
+  {
+    "type": "precondition",
+    "name": "Food Allergies"
+  },
+  {
+    "type": "precondition",
+    "name": "Fructose Malabsorption (for some)"
+  },
+  {
+    "type": "precondition",
+    "name": "GERD"
+  },
+  {
+    "type": "precondition",
+    "name": "Gallstones (large amounts)"
+  },
+  {
+    "type": "precondition",
+    "name": "Gastric Sensitivity"
+  },
+  {
+    "type": "precondition",
+    "name": "Gastric issues"
+  },
+  {
+    "type": "precondition",
+    "name": "Gastrointestinal Issues"
+  },
+  {
+    "type": "precondition",
+    "name": "Gluten Sensitivity"
+  },
+  {
+    "type": "precondition",
+    "name": "Gluten Sensitivity (if contaminated)"
+  },
+  {
+    "type": "precondition",
+    "name": "Gluten Sensitivity (non-tamari types)"
+  },
+  {
+    "type": "precondition",
+    "name": "Gout"
+  },
+  {
+    "type": "precondition",
+    "name": "Gout (for some types)"
+  },
+  {
+    "type": "precondition",
+    "name": "Gout (high purine, if prone)"
+  },
+  {
+    "type": "precondition",
+    "name": "Grape Allergy"
+  },
+  {
+    "type": "precondition",
+    "name": "Gut Health Issues"
+  },
+  {
+    "type": "precondition",
+    "name": "Heart Conditions"
+  },
+  {
+    "type": "precondition",
+    "name": "Heart Disease"
+  },
+  {
+    "type": "precondition",
+    "name": "Herb Allergies"
+  },
+  {
+    "type": "precondition",
+    "name": "High Blood Pressure"
+  },
+  {
+    "type": "precondition",
+    "name": "High Calories"
+  },
+  {
+    "type": "precondition",
+    "name": "High Calories (if overconsumed)"
+  },
+  {
+    "type": "precondition",
+    "name": "High Cholesterol"
+  },
+  {
+    "type": "precondition",
+    "name": "High Cholesterol (for coconut oil/cream)"
+  },
+  {
+    "type": "precondition",
+    "name": "High Cholesterol (if skin not removed)"
+  },
+  {
+    "type": "precondition",
+    "name": "High Cholesterol (in large amounts)"
+  },
+  {
+    "type": "precondition",
+    "name": "High Cholesterol (moderate consumption)"
+  },
+  {
+    "type": "precondition",
+    "name": "High Fat"
+  },
+  {
+    "type": "precondition",
+    "name": "High Mercury (for certain types/consumption frequency)"
+  },
+  {
+    "type": "precondition",
+    "name": "High Processed Fats"
+  },
+  {
+    "type": "precondition",
+    "name": "High Sodium"
+  },
+  {
+    "type": "precondition",
+    "name": "High Sodium (some brands)"
+  },
+  {
+    "type": "precondition",
+    "name": "High Sodium Intake"
+  },
+  {
+    "type": "precondition",
+    "name": "High Sugar"
+  },
+  {
+    "type": "precondition",
+    "name": "High cholesterol"
+  },
+  {
+    "type": "precondition",
+    "name": "Hormonal Sensitivity"
+  },
+  {
+    "type": "precondition",
+    "name": "Hyperactivity"
+  },
+  {
+    "type": "precondition",
+    "name": "Hypertension"
+  },
+  {
+    "type": "precondition",
+    "name": "IBS"
+  },
+  {
+    "type": "precondition",
+    "name": "IBS (for some)"
+  },
+  {
+    "type": "precondition",
+    "name": "Infant Botulism (under 1 year)"
+  },
+  {
+    "type": "precondition",
+    "name": "Insulin Resistance"
+  },
+  {
+    "type": "precondition",
+    "name": "Irritable Bowel Syndrome (IBS)"
+  },
+  {
+    "type": "precondition",
+    "name": "Kidney Disease"
+  },
+  {
+    "type": "precondition",
+    "name": "Kidney Stones"
+  },
+  {
+    "type": "precondition",
+    "name": "Kidney Stones (high oxalate)"
+  },
+  {
+    "type": "precondition",
+    "name": "Kidney Stones (high oxalate, if prone)"
+  },
+  {
+    "type": "precondition",
+    "name": "Kidney Stones (oxalate, for some)"
+  },
+  {
+    "type": "precondition",
+    "name": "Lactose Intolerance"
+  },
+  {
+    "type": "precondition",
+    "name": "Lactose Intolerance (less severe)"
+  },
+  {
+    "type": "precondition",
+    "name": "Lactose Intolerance (though lower lactose)"
+  },
+  {
+    "type": "precondition",
+    "name": "Latex Fruit Syndrome"
+  },
+  {
+    "type": "precondition",
+    "name": "Liver Damage (very large doses)"
+  },
+  {
+    "type": "precondition",
+    "name": "Liver Disease"
+  },
+  {
+    "type": "precondition",
+    "name": "Liver Disease (Cassia Cinnamon in large amounts)"
+  },
+  {
+    "type": "precondition",
+    "name": "MSG Sensitivity"
+  },
+  {
+    "type": "precondition",
+    "name": "Mango Allergy"
+  },
+  {
+    "type": "precondition",
+    "name": "Medication Interactions"
+  },
+  {
+    "type": "precondition",
+    "name": "Migraine"
+  },
+  {
+    "type": "precondition",
+    "name": "Migraine sufferers"
+  },
+  {
+    "type": "precondition",
+    "name": "Migraines"
+  },
+  {
+    "type": "precondition",
+    "name": "Migraines (for some)"
+  },
+  {
+    "type": "precondition",
+    "name": "Milk Allergy"
+  },
+  {
+    "type": "precondition",
+    "name": "Mushroom Allergy"
+  },
+  {
+    "type": "precondition",
+    "name": "Mustard Allergy"
+  },
+  {
+    "type": "precondition",
+    "name": "Neurological Disorders"
+  },
+  {
+    "type": "precondition",
+    "name": "Nightshade Sensitivity"
+  },
+  {
+    "type": "precondition",
+    "name": "Nightshade Sensitivity (rare)"
+  },
+  {
+    "type": "precondition",
+    "name": "Nut Allergies"
+  },
+  {
+    "type": "precondition",
+    "name": "Nut Allergy"
+  },
+  {
+    "type": "precondition",
+    "name": "Obesity"
+  },
+  {
+    "type": "precondition",
+    "name": "Onion Allergy"
+  },
+  {
+    "type": "precondition",
+    "name": "Opium Poppy Alkaloids (trace amounts, for drug tests)"
+  },
+  {
+    "type": "precondition",
+    "name": "Osteoporosis"
+  },
+  {
+    "type": "precondition",
+    "name": "Paprika Allergy"
+  },
+  {
+    "type": "precondition",
+    "name": "Peach Allergy"
+  },
+  {
+    "type": "precondition",
+    "name": "Peanut Allergy"
+  },
+  {
+    "type": "precondition",
+    "name": "Pear Allergy"
+  },
+  {
+    "type": "precondition",
+    "name": "Pine Mouth Syndrome (rare)"
+  },
+  {
+    "type": "precondition",
+    "name": "Pineapple Allergy"
+  },
+  {
+    "type": "precondition",
+    "name": "Pregnancy"
+  },
+  {
+    "type": "precondition",
+    "name": "Pregnancy (large amounts)"
+  },
+  {
+    "type": "precondition",
+    "name": "Processed Meat (cancer risk)"
+  },
+  {
+    "type": "precondition",
+    "name": "Red Meat Allergy"
+  },
+  {
+    "type": "precondition",
+    "name": "Respiratory Conditions"
+  },
+  {
+    "type": "precondition",
+    "name": "Respiratory Issues"
+  },
+  {
+    "type": "precondition",
+    "name": "Rhubarb Allergy"
+  },
+  {
+    "type": "precondition",
+    "name": "Salicylate Sensitivity"
+  },
+  {
+    "type": "precondition",
+    "name": "Seed Allergy"
+  },
+  {
+    "type": "precondition",
+    "name": "Sensitive Digestion"
+  },
+  {
+    "type": "precondition",
+    "name": "Sensitivity to Additives"
+  },
+  {
+    "type": "precondition",
+    "name": "Sensitivity to artificial flavors"
+  },
+  {
+    "type": "precondition",
+    "name": "Sensitivity to artificial sweeteners"
+  },
+  {
+    "type": "precondition",
+    "name": "Sensitivity to food acids"
+  },
+  {
+    "type": "precondition",
+    "name": "Sensitivity to food additives"
+  },
+  {
+    "type": "precondition",
+    "name": "Sesame Allergy"
+  },
+  {
+    "type": "precondition",
+    "name": "Severe Kidney Conditions"
+  },
+  {
+    "type": "precondition",
+    "name": "Shellfish Allergy"
+  },
+  {
+    "type": "precondition",
+    "name": "Sodium Sensitivity"
+  },
+  {
+    "type": "precondition",
+    "name": "Soy Allergy"
+  },
+  {
+    "type": "precondition",
+    "name": "Spice Allergies"
+  },
+  {
+    "type": "precondition",
+    "name": "Strawberry Allergy"
+  },
+  {
+    "type": "precondition",
+    "name": "Sugar Sensitivity"
+  },
+  {
+    "type": "precondition",
+    "name": "Sulfite Sensitivity (dried apricots)"
+  },
+  {
+    "type": "precondition",
+    "name": "Surgery Recovery"
+  },
+  {
+    "type": "precondition",
+    "name": "Thyroid Disorders"
+  },
+  {
+    "type": "precondition",
+    "name": "Thyroid Issues (controversial, moderate amounts usually fine)"
+  },
+  {
+    "type": "precondition",
+    "name": "Thyroid Issues (in large raw quantities)"
+  },
+  {
+    "type": "precondition",
+    "name": "Tomato Allergy"
+  },
+  {
+    "type": "precondition",
+    "name": "Tooth Enamel Erosion (undiluted)"
+  },
+  {
+    "type": "precondition",
+    "name": "Ulcers"
+  },
+  {
+    "type": "precondition",
+    "name": "Underage Consumption"
+  },
+  {
+    "type": "precondition",
+    "name": "Vegetarian/Vegan Diets"
+  },
+  {
+    "type": "precondition",
+    "name": "Wheat Allergy"
+  },
+  {
+    "type": "precondition",
+    "name": "Yeast Allergy"
+  }
+]

@@ -1,0 +1,101 @@
+{
+  "name": "@undecaf/zbar-wasm",
+  "version": "0.11.0",
+  "description": "A WebAssembly build of the C/C++ ZBar barcode reader",
+  "type": "module",
+  "main": "./dist/main.mjs",
+  "browser": {
+    "./dist/main.cjs": "./dist/index.js",
+    "./dist/main.mjs": "./dist/index.mjs"
+  },
+  "exports": {
+    ".": {
+      "node": {
+        "import": {
+          "zbar-inlined": "./dist/inlined/main.mjs",
+          "default": "./dist/main.mjs"
+        },
+        "require": {
+          "zbar-inlined": "./dist/inlined/main.cjs",
+          "default": "./dist/main.cjs"
+        }
+      },
+      "browser": {
+        "import": {
+          "zbar-inlined": "./dist/inlined/index.mjs",
+          "default": "./dist/index.mjs"
+        },
+        "default": {
+          "zbar-inlined": "./dist/inlined/index.js",
+          "default": "./dist/index.js"
+        }
+      },
+      "import": {
+        "zbar-inlined": "./dist/inlined/main.mjs",
+        "default": "./dist/main.mjs"
+      },
+      "require": {
+        "zbar-inlined": "./dist/inlined/main.cjs",
+        "default": "./dist/main.cjs"
+      },
+      "script": {
+        "zbar-inlined": "./dist/inlined/index.mjs",
+        "default": "./dist/index.mjs"
+      },
+      "default": {
+        "zbar-inlined": "./dist/inlined/index.js",
+        "default": "./dist/index.js"
+      }
+    },
+    "./dist/zbar.wasm": "./dist/zbar.wasm",
+    "./package.json": "./package.json"
+  },
+  "types": "./dist/index.d.ts",
+  "typings": "./dist/index.d.ts",
+  "files": [
+    "./dist/*js",
+    "./dist/*js.map",
+    "./dist/zbar.wasm",
+    "./dist/inlined/*js",
+    "./dist/inlined/*js.map",
+    "./dist/index.d.ts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/undecaf/zbar-wasm.git"
+  },
+  "keywords": [
+    "zbar",
+    "barcode",
+    "qrcode",
+    "scanner",
+    "wasm",
+    "webassembly",
+    "emscripten"
+  ],
+  "author": "F. Kasper <fkasper@modus-operandi.at>",
+  "license": "LGPL-2.1+",
+  "bugs": {
+    "url": "https://github.com/undecaf/zbar-wasm/issues"
+  },
+  "homepage": "https://github.com/undecaf/zbar-wasm#readme",
+  "devDependencies": {
+    "@rollup/plugin-alias": "^5.0.0",
+    "@rollup/plugin-commonjs": "^25.0.4",
+    "@rollup/plugin-node-resolve": "^15.2.1",
+    "@rollup/plugin-terser": "^0.4.3",
+    "@types/jest": "^27.0.3",
+    "canvas": "^2.11.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jest": "^27.5.1",
+    "prettier": "^3.0.2",
+    "rollup": "^3.28.1",
+    "rollup-plugin-dts": "^6.0.0",
+    "rollup-plugin-polyfill-node": "^0.12.0",
+    "rollup-plugin-typescript2": "^0.35.0",
+    "testcafe": "^3.3.0",
+    "tslib": "^2.6.2",
+    "typescript": "^5.1.6"
+  }
+}
