@@ -10,7 +10,7 @@ const Ingredient = () => {
 
   const fetchSuggestions = async (search) => {
     try {
-      const res = await axios.get(`http://localhost:4001/search?name=${search}`);
+      const res = await axios.get(`https://packbits.onrender.com/search?name=${search}`);
       setSuggestions(res.data);
     } catch (err) {
       console.error(err);
@@ -31,7 +31,7 @@ const Ingredient = () => {
     setQuery(name);
     setSuggestions([]);
     try {
-      const res = await axios.get(`http://localhost:4001/ingredient/${name}`);
+      const res = await axios.get(`https://packbits.onrender.com/ingredient/${name}`);
       setSelectedIngredient(res.data);
     } catch (err) {
       console.error(err);

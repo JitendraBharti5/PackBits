@@ -29,7 +29,7 @@ function Singri({ selectedIngredient }) {
       if (!selectedIngredient) return;
 
       try {
-        const res = await axios.get(`http://localhost:4001/ingredient/${selectedIngredient.name}`);
+        const res = await axios.get(`https://packbits.onrender.com/ingredient/${selectedIngredient.name}`);
         setIngredientData(res.data);
         setError(false);
       } catch (error) {

@@ -39,7 +39,7 @@ function Profile() {
   useEffect(() => {
     const fetchUserProfile = async () => {
       try {
-        const res = await axios.get(`http://localhost:4001/user/${userId}`);
+        const res = await axios.get(`https://packbits.onrender.com/user/${userId}`);
         const { fullname, email, allergies, preconditions, age, vegNonVeg } = res.data.user;
         setFullname(fullname);
         setEmail(email);
@@ -62,7 +62,7 @@ function Profile() {
   useEffect(() => {
     const fetchOptions = async () => {
       try {
-        const res = await axios.get('http://localhost:4001/options');
+        const res = await axios.get('https://packbits.onrender.com/options');
         setAllergyOptions(res.data.allergy || []);
         setPreconditionOptions(res.data.precondition || []);
       } catch (error) {
@@ -90,7 +90,7 @@ function Profile() {
 
   const saveField = async (updates, closeEditors) => {
     try {
-      await axios.put("http://localhost:4001/user/update", {
+      await axios.put("https://packbits.onrender.com/user/update", {
         userId,
         ...updates,
       });

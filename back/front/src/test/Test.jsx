@@ -14,7 +14,7 @@ const Test = () => {
   useEffect(() => {
     const fetchMatch = async () => {
       try {
-        const res = await axios.get(`http://localhost:4001/test/${id}?quantity=${quantity}&userId=${userId}`); 
+        const res = await axios.get(`https://packbits.onrender.com/test/${id}?quantity=${quantity}&userId=${userId}`); 
         setResult(res.data);
       } catch (err) {
         console.error('Error:', err);
