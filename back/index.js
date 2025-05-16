@@ -9,6 +9,8 @@ import productRoute from "./route/product.route.js";
 import { getProductQuantities,getSuggestions,getFoodItemById,getFoodItemByBarcode} from "./controller/product.controller.js";
 import { getIngredientByName, searchIngredients } from'./controller/ingredient.controller.js';
 import {testProductAgainstProfile } from "./controller/test.controller.js";
+import path from "path";
+
 const app = express();
 
 app.use(cors());
@@ -18,7 +20,7 @@ app.use(express.urlencoded({ extended: true }));
 dotenv.config();
 
 const PORT = process.env.PORT || 4000;
-const URI = process.env.MongoDBURI;
+const URI = process.env.AtlasURI;
 
 // connect to mongoDB
 try {
@@ -38,6 +40,22 @@ app.use("/select", productRoute); //scan-image, suggestions, result/:id..
 app.use("/ingredient/:name", getIngredientByName);
 app.use("/search", searchIngredients);
 app.use("/test/:id", testProductAgainstProfile);
+
+{/**code for deploymrnt */}
+if (process.env.NODE_ENV === "production") {
+    const dirPath = path.resolve();
+    app.use(express.static("./front/dist"));
+
+    app.get("/ingredient/:name", (req, res) => {
+        res.sendFile(path.resolve(dirPath, "./front/dist", "index.html"));
+    });
+
+    app.get("/test/:id", (req, res) => {
+        res.sendFile(path.resolve(dirPath, "./front/dist", "index.html"));
+    });
+}
+
+
 
 app.use(logger("tiny"));
 
