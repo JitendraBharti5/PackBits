@@ -3,10 +3,11 @@ import ingredients from '../model/ingredient.model.js'
 export const getIngredientByName = async (req, res) => {
   try {
     const { name } = req.params;
-    // Build a regex that matches the name exactly, ignoring case
-    const ingredient = await ingredients.findOne({
-      name: new RegExp(`^${name}$`, 'i')
-    });
+
+    const escapedName = name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const regex = new RegExp(`^${escapedName}$`, 'i');
+
+    const ingredient = await ingredients.findOne({ name: regex });
 
     if (!ingredient) {
       return res.status(404).json({ message: 'Ingredient not found' });
@@ -17,6 +18,7 @@ export const getIngredientByName = async (req, res) => {
     res.status(500).json({ message: 'Server Error', error: error.message });
   }
 };
+
 
 
 
