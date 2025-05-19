@@ -249,7 +249,7 @@ const Home = () => {
         return;
       }
       try {
-        const res = await axios.get(`http://localhost:4001/select/suggestions?query=${query}`);
+        const res = await axios.get(`https://packbits.onrender.com/select/suggestions?query=${query}`);
         setSuggestions(res.data);
       } catch (err) {
         toast.error('Error fetching product suggestions.');
@@ -263,7 +263,7 @@ const Home = () => {
     const fetchQuantities = async () => {
       if (!selectedProduct) return;
       try {
-        const res = await axios.get(`http://localhost:4001/select/quantities?name=${selectedProduct.product_name}`);
+        const res = await axios.get(`https://packbits.onrender.com/select/quantities?name=${selectedProduct.product_name}`);
         setQuantities(res.data);
         setSelectedQuantity(res.data[0] || '');
       } catch (err) {
@@ -292,7 +292,7 @@ const Home = () => {
     setLoading(true);
     try {
       console.log("Scanning barcode:", barcode);
-      const res = await axios.get(`http://localhost:4001/select/barcode/${barcode}`);
+      const res = await axios.get(`https://packbits.onrender.com/select/barcode/${barcode}`);
       if (res.data && res.data._id) {
         navigate(`/result/${res.data._id}`);
       } else {
@@ -316,7 +316,7 @@ const Home = () => {
     formData.append('image', file);
     setLoading(true);
     try {
-      const response = await axios.post('http://localhost:4001/select/scan-image', formData, {
+      const response = await axios.post('https://packbits.onrender.com/select/scan-image', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
 
