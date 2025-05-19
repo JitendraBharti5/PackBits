@@ -83,7 +83,6 @@
 // };
 
 // export default QrScanner;
-
 import React, { useEffect, useRef } from 'react';
 import { Html5Qrcode } from 'html5-qrcode';
 
@@ -111,7 +110,8 @@ const QrScanner = ({ onScanSuccess, onCancel }) => {
           scanner
             .start(
               cameraId,
-              { fps: 20, qrbox: 250 },
+  {fps: isMobileDevice ? 10 : 20,
+  qrbox: isMobileDevice ? { width: 200, height: 200 } : 250},
               (decodedText) => {
                 scanner
                   .stop()
@@ -154,11 +154,11 @@ const QrScanner = ({ onScanSuccess, onCancel }) => {
         <div id={qrCodeRegionId} className="absolute top-0 left-0 w-full h-full" />
 
         {/* Show green box only on mobile */}
-        {isMobileDevice() && (
+        {/* {isMobileDevice() && (
           <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
             <div className="w-[200px] h-[200px] border-4 border-green-500"></div>
           </div>
-        )}
+        )} */}
       </div>
 
       <button
@@ -172,4 +172,5 @@ const QrScanner = ({ onScanSuccess, onCancel }) => {
 };
 
 export default QrScanner;
+
 
