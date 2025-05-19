@@ -22,7 +22,7 @@ function Result() {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const res = await axios.get(`http://localhost:4001/select/result/${id}?quantity=${selectedQuantity}`);
+        const res = await axios.get(`https://packbits.onrender.com/select/result/${id}?quantity=${selectedQuantity}`);
         const data = res.data;
   
         // If selectedQuantity is empty and available_quantities exists, set default and reload
