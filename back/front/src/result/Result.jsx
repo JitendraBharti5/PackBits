@@ -136,8 +136,8 @@ function Result() {
             </div>
 
             <div className="overflow-x-auto">
+              <p className="text-red-100 text-xs">Click on ingredient name to get full deatils</p>
               <table className="w-full text-left border-collapse">
-                <p className="text-red-100 text-xs">Click on ingredient name to get full deatils</p>
                 <thead>
                   <tr className="border-b border-gray-600">
                     <th className="p-2 text-lg">Ingredient (per {selected_quantity || selectedQuantity})</th>
