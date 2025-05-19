@@ -22,7 +22,7 @@ function Result() {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const res = await axios.get(`https://packbits.onrender.com/select/result/${id}?quantity=${selectedQuantity}`);
+        const res = await axios.get(`http://localhost:4001/select/result/${id}?quantity=${selectedQuantity}`);
         const data = res.data;
   
         // If selectedQuantity is empty and available_quantities exists, set default and reload
@@ -148,16 +148,16 @@ function Result() {
 const match = amountStr.match(/^([\d.]+)\s*([a-zA-Z]*)$/);
 const num = match ? parseFloat(match[1]) : 0;
     const unit = match ? match[2] : '';
-    
+    console.log(unit);
     let qty = selected_quantity || selectedQuantity || "100";
     qty = qty.toString().trim(); 
    
-    if (qty.match(/(L|Kg | kg)$/)) {
+    if (qty.match(/(L|Kg|kg)$/)) {
         qty = parseFloat(qty) * 1000;
     } else {
         qty = parseFloat(qty);
     }
-
+console.log(qty);
     const calculatedAmount = ((num * qty) / 100).toFixed(2);
     
     return (
@@ -242,7 +242,7 @@ const num = match ? parseFloat(match[1]) : 0;
     let qty = selected_quantity || selectedQuantity || "100"; 
     qty = qty.toString().trim(); 
 
-    if (qty.match(/(L|Kg | kg)$/)) {
+    if (qty.match(/(L|Kg|kg)$/)) {
         qty = parseFloat(qty) * 1000;
     } else {
         qty = parseFloat(qty);
