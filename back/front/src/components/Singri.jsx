@@ -63,7 +63,7 @@ function Singri({ selectedIngredient }) {
     switch (harmLevel) {
       case 'Low':
         return meterLow;
-      case 'Medium':
+      case 'Moderate':
         return meterMedium;
       case 'High':
         return meterHigh;
