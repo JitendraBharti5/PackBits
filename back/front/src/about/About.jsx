@@ -49,7 +49,7 @@ This project is a user-friendly web application that allows users to scan packag
             </ul>
           </section>
 
-          <section>
+          {/* <section>
             <h2 className="text-2xl font-semibold text-white mb-2">🙋‍♂️ About Developer</h2>
             <div className="text-gray-300 space-y-2">
               <p><span className="font-medium text-white">Name:</span> <b>JITENDRA BHARTI</b></p>
@@ -87,7 +87,7 @@ This project is a user-friendly web application that allows users to scan packag
                 </a>
               </p>
             </div>
-          </section>
+          </section> */}
         </motion.div>
       </div>
     </div>
